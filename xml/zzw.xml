@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persons>
+  <id number="1">
+    <basic_information>
+      <name> 詹志伟 </name>
+	  <age> 21 </age>
+	  <sex> 男 </sex>
+	  <hometown> 安徽 </hometown>
+	  <nationality> 中国 </nationality>
+    </basic_information>
+    <identity>
+	  <name> 学生 </name>
+	  <iden_id> 71116131 </iden_id>
+	  <speciality> 软件工程 </speciality>
+	</identity>
+	<remarks>
+	  <hobby> 爱好阅读 </hobby>
+	</remarks>
+  </id>
+</persons>
+	  

@@ -47,6 +47,14 @@ body a:hover,body a:focus{
 	-moz-background-size:cover;
 	position: relative; 
 }  
+
+.agileits-banner2 {
+	background:url(../images/333.png)no-repeat center 0px;
+	-webkit-background-size:cover;
+	background-size:cover;
+	-moz-background-size:cover;
+	position: relative; 
+} 
 /*-- logo --*/ 
 .w3llogo h1 {
     font-size: 2em;
