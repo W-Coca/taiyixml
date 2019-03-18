@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persons>
-  <id number="1">
+<?xml-stylesheet type="text/css" href="css/person.css"?>
+<persons id_number="1">
     <basic_information>
       <name> 詹志伟 </name>
 	  <age> 21 </age>
@@ -16,6 +16,5 @@
 	<remarks>
 	  <hobby> 爱好阅读 </hobby>
 	</remarks>
-  </id>
 </persons>
 	  

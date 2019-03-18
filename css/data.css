@@ -1,0 +1,33 @@
+movies
+{
+background-color: #ffffff;
+width: 100%;
+}
+movie
+{
+display: block;
+margin-bottom: 30pt;
+margin-left: 0;
+}
+content,personnel,music,other
+{
+color: #FF0000;
+font-size: 20pt;
+}
+name,synopsis,role,design,director, performer, other_person,theme_song, propaganda_song,score, release_time, box_office
+{
+color: #0000FF;
+font-size: 20pt;
+}
+lead, supporting_role,chief_director, other,perlead, per_supporting_role,sound_recording, photography, screenwriter
+{
+display: block;
+color: #000000;
+margin-left: 20pt;
+}
+corner_director, dubbing_director, deputy_director
+{
+display: block;
+color: #000000;
+margin-left: 15pt;
+}

@@ -1,0 +1,25 @@
+persons
+{
+background-color: #ffffff;
+width: 80%;
+}
+basic_information,identity,remarks
+{
+display: block;
+margin-bottom: 60pt;
+margin-left: 0;
+font-size: 2em;
+color: #fff;
+position: relative;
+letter-spacing: 2px;
+}
+name,age,sex,hometown,nationality,iden_id,speciality,hobby
+{
+display: block;
+margin-bottom: 60pt;
+margin-left: 0;
+font-size: 2em;
+color: #fff;
+position: relative;
+letter-spacing: 2px;
+}

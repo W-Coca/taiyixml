@@ -1,0 +1,65 @@
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by 123 (456) -->
+<!--太一组DTD-->
+<!ELEMENT movies (movie+)>
+<!ELEMENT movie (content, personnel, music, other)>
+<!ATTLIST movie
+	id ID #REQUIRED
+	Producing_country CDATA #IMPLIED
+>
+<!ELEMENT content (name, synopsis, role)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT synopsis (#PCDATA)>
+<!ELEMENT role (lead, supporting_role)>
+<!ELEMENT lead (#PCDATA)>
+<!ATTLIST lead
+	rolid ID #REQUIRED
+	rolsex CDATA #IMPLIED
+>
+<!ELEMENT supporting_role (#PCDATA)>
+<!ATTLIST supporting_role
+	suprolid ID #REQUIRED
+	suprolsex CDATA #IMPLIED
+>
+<!ELEMENT personnel (design, director, performer, other_person)>
+<!ELEMENT design (art_design, styling_design, clothing_design)>
+<!ELEMENT art_design (#PCDATA)>
+<!ELEMENT styling_design (#PCDATA)>
+<!ELEMENT clothing_design (#PCDATA)>
+<!ELEMENT director (chief_director, other)>
+<!ELEMENT chief_director (#PCDATA)>
+<!ELEMENT other_director (corner_director, dubbing_director, deputy_director)>
+<!ELEMENT corner_director (#PCDATA)>
+<!ELEMENT dubbing_director (#PCDATA)>
+<!ELEMENT deputy_director (#PCDATA)>
+<!ELEMENT performer (perlead, per_supporting_role)>
+<!ELEMENT perlead (#PCDATA)>
+<!ATTLIST perlead
+	perid ID #REQUIRED
+	persex CDATA #IMPLIED
+	pernation CDATA #IMPLIED
+>
+<!ELEMENT per_supporting_role (#PCDATA)>
+<!ATTLIST per_supporting_role
+	suprolid ID #REQUIRED
+	suprolsex CDATA #IMPLIED
+	suprolnation CDATA #IMPLIED
+>
+<!ELEMENT other_person (sound_recording, photography, screenwriter)>
+<!ELEMENT sound_recording (#PCDATA)>
+<!ELEMENT photography (#PCDATA)>
+<!ELEMENT screenwriter (#PCDATA)>
+<!ELEMENT music (theme_song, propaganda_song)>
+<!ELEMENT theme_song (#PCDATA)>
+<!ATTLIST theme_song
+	theme_language CDATA #IMPLIED
+	theme_singer CDATA #IMPLIED
+>
+<!ELEMENT propaganda_song (#PCDATA)>
+<!ATTLIST propaganda_song
+	pro_language CDATA #IMPLIED
+	pro_singer CDATA #IMPLIED
+>
+<!ELEMENT other (score, release_time, box_office)>
+<!ELEMENT score (#PCDATA)>
+<!ELEMENT release_time (#PCDATA)>
+<!ELEMENT box_office (#PCDATA)>

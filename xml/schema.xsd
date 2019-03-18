@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--太一组schema-->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="movies">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element ref="movie"
+						minOccurs="0" maxOccurs="1000"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="movie">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element ref="content"/>
+			<xsd:element ref="personnel"/>
+			<xsd:element ref="music"/>
+			<xsd:element ref="other"/>
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:integer" use="required"/>
+		<xsd:attribute name="Producing_country" type="xsd:string"/>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="content">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="synopsis" type="xsd:string"/>
+			<xsd:element ref="role"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="role">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element ref="lead" 
+			minOccurs="0" maxOccurs="10"/>
+			<xsd:element ref="supporting_role" 
+			minOccurs="0" maxOccurs="10"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="lead">
+    <xsd:complexType>
+	    <xsd:simpleContent>
+		    <xsd:extension base="xsd:string">
+			    <xsd:attribute name="rolid" type="xsd:integer" use="required"/>
+				<xsd:attribute name="rolsex" type="xsd:boolean"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="supporting_role">
+    <xsd:complexType>
+	    <xsd:simpleContent>
+		    <xsd:extension base="xsd:string">
+			    <xsd:attribute name="suprolid" type="xsd:integer"  use="required"/>
+				<xsd:attribute name="suprolsex" type="xsd:boolean"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="personnel">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element ref="design" />
+			<xsd:element ref="director" />
+			<xsd:element ref="performer"/>
+			<xsd:element ref="other_person"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="design">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element name="art_design" type="xsd:string"/>
+			<xsd:element name="styling_design" type="xsd:string"/>
+			<xsd:element name="clothing_design" type="xsd:string"
+						minOccurs="0" maxOccurs="10"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="director">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element name="chief_director" type="xsd:string"/>
+			<xsd:element ref="other_director" />
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="other_director">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element name="corner_director" type="xsd:string"
+						minOccurs="0" maxOccurs="10"/>
+			<xsd:element name="dubbing_director" type="xsd:string"/>
+			<xsd:element name="deputy_director" type="xsd:string"
+						minOccurs="0" maxOccurs="10"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="performer">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element ref="perlead"
+						minOccurs="0" maxOccurs="10"/>
+		    <xsd:element ref="per_supporting_role"
+						minOccurs="0" maxOccurs="10"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="perlead">
+    <xsd:complexType>
+	    <xsd:simpleContent>
+		    <xsd:extension base="xsd:string">
+			    <xsd:attribute name="perid" type="xsd:integer" use="required"/>
+				<xsd:attribute name="persex" type="xsd:boolean"/>
+				<xsd:attribute name="pernation" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="per_supporting_role">
+    <xsd:complexType>
+	    <xsd:simpleContent>
+		    <xsd:extension base="xsd:string">
+			    <xsd:attribute name="suprolid" type="xsd:integer"  use="required"/>
+				<xsd:attribute name="suprolsex" type="xsd:boolean"/>
+				<xsd:attribute name="suprolnation" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="other_person">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element name="sound_recording" type="xsd:string"/>
+			<xsd:element name="photography" type="xsd:string"/>
+			<xsd:element name="screenwriter" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="music">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element ref="theme_song" />
+			<xsd:element ref="propaganda_song" />
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="theme_song">
+    <xsd:complexType>
+	    <xsd:simpleContent>
+		    <xsd:extension base="xsd:string">
+			    <xsd:attribute name="theme_language" type="xsd:string"/>
+				<xsd:attribute name="theme_singer" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="propaganda_song">
+    <xsd:complexType>
+	    <xsd:simpleContent>
+		    <xsd:extension base="xsd:string">
+			    <xsd:attribute name="pro_language" type="xsd:string"/>
+				<xsd:attribute name="pro_singer" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="other">
+    <xsd:complexType>
+	    <xsd:sequence>
+		    <xsd:element name="score" type="xsd:decimal" />
+			<xsd:element name="release_time" type="xsd:date" />
+			<xsd:element name="box_office" type="xsd:integer" />
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>
