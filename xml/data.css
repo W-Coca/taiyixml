@@ -1,0 +1,143 @@
+
+movies
+{
+display: block;
+background-image:url(../images/lan.jpg);
+background-repeat: repeat;
+
+background-position: center 0;
+}
+movie
+{
+padding-top:150px; 
+display: block;
+text-align:center;
+padding-left:300px; 
+padding-right:300px; 
+}
+content,personnel,music,other
+{
+color: #FF0000;
+font-size: 20pt;
+}
+name
+{
+display:block;
+color: #FF0000;
+font-size: 40pt;
+margin:30px;
+}
+synopsis:before {
+  content: "影片简介：";
+}
+synopsis
+{
+color: #0000FF;
+font-size: 20pt;
+}
+
+supporting_role:before {
+  content: "  配角  ";
+}
+lead:before {
+  content: "  主角 ";
+}
+per_supporting_role:before {
+  content: "  配角  ";
+}
+perlead:before {
+  content: "  主角 ";
+}
+perlead,per_supporting_role
+{
+display: block;
+color: #FFFF00;
+}
+lead,supporting_role
+{
+display: block;
+color: #FFFF00;
+}
+
+chief_director:before {
+  content: " 总导演： ";
+}
+sound_recording:before {
+  content: "  录音： ";
+}
+photography:before {
+  content: "  摄影： ";
+}
+screenwriter:before {
+  content: "  编剧： ";
+}
+theme_song:before {
+  content: "  主题曲： ";
+}
+propaganda_song:before {
+  content: "  宣传曲： ";
+}
+screenwriter:before {
+  content: "  编剧： ";
+}
+release_time:before {
+  content: "  上映时间： ";
+}
+score:before {
+  content: "  评分： ";
+}
+box_office:before {
+  content: "  票房： ";
+}
+deputy_director:before {
+  content: "  副导演： ";
+}
+corner_director:before {
+  content: "  选角导演： ";
+}
+dubbing_director:before {
+  content: "  配音导演： ";
+}
+art_design:before {
+  content: "  艺术设计： ";
+}
+styling_design:before {
+  content: "  造型设计： ";
+}
+clothing_design:before {
+  content: "  服装设计： ";
+}
+lead:before {
+  content: perlead,per_supporting_role;
+}
+chief_director,sound_recording, photography, screenwriter
+{
+display: block;
+color: #000000;
+}
+other_person,theme_song, propaganda_song
+{
+
+color: #0000FF;
+font-size: 20pt;
+}
+score, release_time, box_office
+{
+	display: block;
+	color: #000000;
+	font-size: 20pt;
+}
+
+corner_director, dubbing_director, deputy_director
+{
+
+color: #000000;
+
+}
+clothing_design,art_design,styling_design
+{
+
+color: #000000;
+	display: block;
+
+}

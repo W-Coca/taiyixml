@@ -1,32 +1,20 @@
 
-*
-{
-	display
-}
-
 persons
 {
-display: block;
 background-color: #ffffff;
-width: 80%;
+width: 100%;
 }
 basic_information,identity,remarks
 {
 display: block;
-margin-bottom: 60pt;
+margin-bottom: 20pt;
 margin-left: 0;
-font-size: 2em;
-color: #fff;
-position: relative;
-letter-spacing: 2px;
+font-size: 1em;
 }
 name,age,sex,hometown,nationality,iden_id,speciality,hobby
 {
 display: block;
-margin-bottom: 60pt;
+margin-bottom: 20pt;
 margin-left: 0;
 font-size: 2em;
-color: #fff;
-position: relative;
-letter-spacing: 2px;
 }

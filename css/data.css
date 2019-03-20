@@ -1,20 +1,30 @@
+
+
 movies
 {
+display: block;
 background-color: #ffffff;
 width: 100%;
 }
 movie
 {
 display: block;
+display: block;
 margin-bottom: 30pt;
 margin-left: 0;
 }
 content,personnel,music,other
 {
+display: block;
 color: #FF0000;
 font-size: 20pt;
 }
-name,synopsis,role,design,director, performer, other_person,theme_song, propaganda_song,score, release_time, box_office
+name
+{
+color: #0000FF;
+font-size: 30pt;
+}
+synopsis,role,design,director, performer, other_person,theme_song, propaganda_song,score, release_time, box_office
 {
 color: #0000FF;
 font-size: 20pt;
