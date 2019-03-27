@@ -39,7 +39,11 @@
     <xsl:for-each select="movies/movie">
     <tr>
     <td>
+<<<<<<< HEAD
     <img height="600" width="400">
+=======
+    <img height="200" width="100">
+>>>>>>> f0d88154d297618ba3e055930cf8b96665afaf1b
           <xsl:attribute name="src">
               <xsl:value-of select="other/movie_image"/>
           </xsl:attribute>
