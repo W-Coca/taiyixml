@@ -10,12 +10,12 @@
      <th align="left">image</th>
       <th align="left">name</th>
       <th align="left">synopsis</th>
-      <th align="left" width="300px">perlead</th>
+      <th align="left">perlead</th>
       <th align="left"></th>
-	  <th align="left" width="300">lead</th>
-	  <th align="left" width="300">per_supporting_role</th>
+	  <th align="left">lead</th>
+	  <th align="left">per_supporting_role</th>
 	  <th align="left"></th>
-	  <th align="left" width="400">supporting_role</th>
+	  <th align="left">supporting_role</th>
 	  <th align="left">art_design</th>
 	  <th align="left">styling_design</th>
 	  <th align="left">clothing_design</th>
@@ -39,7 +39,7 @@
     <xsl:for-each select="movies/movie">
     <tr>
     <td>
-    <img height="600" width="300">
+    <img height="600" width="400">
           <xsl:attribute name="src">
               <xsl:value-of select="other/movie_image"/>
           </xsl:attribute>
@@ -48,8 +48,8 @@
     </td>
       <td><xsl:value-of select="content/name"/></td>
       <td><xsl:value-of select="content/synopsis"/></td>
-      <td  width="300px">
-      <xsl:for-each select="personnel/performer/perlead">
+      <td  width="300" height="600">
+      <xsl:for-each  select="personnel/performer/perlead">
 <xsl:value-of select="."/><br/>
       </xsl:for-each>
 </td>
@@ -60,7 +60,7 @@
       </xsl:for-each>
       </td>
 
-<td  width="300">
+<td  width="200">
       <xsl:for-each select="personnel/performer/per_supporting_role">
 <xsl:value-of select="."/><br/>
       </xsl:for-each>
