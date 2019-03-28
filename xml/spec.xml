@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--太一组海报-->
+<?xml-stylesheet type="text/xsl" href="spec.xsl"?>
+<movies>
+	<movie id="27" Producing_country="USA">
+		<content>
+			<name>V字仇杀队</name>
+			<synopsis>讲述了在一个平行的时空里，纳粹赢了二次世界大战，英国沦为殖民地，
+			一名自称“V”的蒙面怪客处处与政府为敌，一名少女被怪客拯救之后，便与他一同挑战恶势力的故事</synopsis>
+			<role>
+				<lead rolid="1" rolsex="false"> 艾维 </lead>
+				<supporting_role suprolid="2" suprolsex="true"> V </supporting_role>
+				<supporting_role suprolid="3" suprolsex="true"> 亚当·萨特勒 </supporting_role>
+				<supporting_role suprolid="4" suprolsex="true"> 芬奇探长 </supporting_role>
+				<supporting_role suprolid="5" suprolsex="true"> 迪特里希 </supporting_role>
+				<supporting_role suprolid="5" suprolsex="true"> 柯迪·克里蒂 </supporting_role>
+			</role>
+		</content>
+		<personnel>
+			<design>
+				<art_design> 马尔科·比特纳·罗瑟 </art_design>
+				<styling_design> 欧文·帕特森 </styling_design>
+				<clothing_design> 萨米希尔德 </clothing_design>
+			</design>
+			<director>
+				<chief_director> 穆斯·麦克提格 </chief_director>
+				<other_director>
+					<corner_director> 露辛达·西森 </corner_director>
+					<dubbing_director> 达里奥·马里亚内利 </dubbing_director>
+					<deputy_director> 托比亚斯·阿萨姆 </deputy_director>
+				</other_director>
+			</director>
+			<performer>
+				<perlead perid="1" persex="false" pernation="USA"> 娜塔莉·波特曼 </perlead>
+				<per_supporting_role suprolid="2" suprolsex="true" suprolnation="Australia"> 雨果·维文 </per_supporting_role>
+				<per_supporting_role suprolid="3" suprolsex="true" suprolnation="Britain"> 约翰·赫特 </per_supporting_role>
+				<per_supporting_role suprolid="4" suprolsex="true" suprolnation="Britain"> 斯蒂芬·瑞  </per_supporting_role>
+				<per_supporting_role suprolid="5" suprolsex="true" suprolnation="Britain"> 斯蒂芬·弗雷 </per_supporting_role>
+				<per_supporting_role suprolid="6" suprolsex="true" suprolnation="Britain"> 蒂姆·皮戈特-史密斯 </per_supporting_role>
+			</performer>
+			<other_person>
+				<sound_recording> 达里奥马里安利 </sound_recording>
+				<photography> 阿德里安·比德尔 </photography>
+				<screenwriter> 莉莉·沃卓斯基 </screenwriter>
+			</other_person>
+		</personnel>
+		<music>
+			<theme_song theme_language="English"> 切记切记 </theme_song>
+			<propaganda_song pro_language="English"> 刀子和子弹 </propaganda_song>
+		</music>
+		<other>
+			<score>8.8</score>
+			<release_time>2006-03-17</release_time>
+			<box_office>132511035</box_office>
+			<movie_link>https://v.qq.com/x/cover/w7hkwrou304fmze.html?ptag=douban.movie</movie_link>
+			<movie_image>../images/movie/27.jpg</movie_image>
+		</other>
+	</movie>
+</movies>
