@@ -33,7 +33,6 @@
 	  <th align="left">release_time</th>
 	  <th align="left">box_office</th>
 	  <th align="left">movie_link</th>
-	  <th align="left">movie_image</th>
 	  
     </tr>
     <xsl:for-each select="movies/movie">
@@ -91,8 +90,10 @@
       <td><xsl:value-of select="other/score"/></td>
 	  <td><xsl:value-of select="other/release_time"/></td>
 	  <td><xsl:value-of select="other/box_office"/></td>
-	  <td><xsl:value-of select="other/movie_link"/></td>
-	  <td><xsl:value-of select="other/movie_image"/></td>
+	  
+	  <td>
+	  <a href="{other/movie_link}"  >腾讯视频</a>
+</td>
     </tr>
     </xsl:for-each>
     </table>

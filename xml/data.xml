@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by 123 (456) -->
+<!--太一组作业1-->
+<?xml-stylesheet type="text/xsl" href="zuoweijian.xsl"?>
+<movies>
+	<movie id="1" Producing_country="USA">
+		<content>
+			<name>肖申克的救赎</name>
+			<english_name>The Shawshank Redemption</english_name>
+			<synopsis>
+				20世纪40年代末，小有成就的青年银行家安迪因涉嫌杀害妻子及她的情人而锒铛入狱。在这座名为肖申克的监狱内，希望似乎虚无缥缈，终身监禁的惩罚无疑注定了安迪接下来灰暗绝望的人生。未过多久，安迪尝试接近囚犯中颇有声望的瑞德，请求对方帮自己搞来小锤子。以此为契机，二人逐渐熟稔，安迪也仿佛在鱼龙混杂、罪恶横生、黑白混淆的牢狱中找到属于自己的求生之道。他利用自身的专业知识，帮助监狱管理层逃税、洗黑钱，同时凭借与瑞德的交往在犯人中间也渐渐受到礼遇。表面看来，他已如瑞德那样对那堵高墙从憎恨转变为处之泰然，但是对自由的渴望仍促使他朝着心中的希望和目标前进。而关于其罪行的真相，似乎更使这一切朝前推进了一步
+			</synopsis>
+			<role>
+				<lead rolid="1" rolsex="true"> 安迪·杜佛兰 </lead>
+				<supporting_role suprolid="2" suprolsex="true"> 艾利斯·波德·瑞德 </supporting_role>
+				<supporting_role suprolid="3" suprolsex="true"> 山姆·诺顿 </supporting_role>
+				<supporting_role suprolid="4" suprolsex="true"> 海伍德 </supporting_role>
+				<supporting_role suprolid="5" suprolsex="true"> 拜伦·赫德利 </supporting_role>
+			</role>
+		</content>
+		<personnel>
+			<design>
+				<art_design> 彼得·兰斯顿·史密斯 </art_design>
+				<styling_design> 彼得·兰斯顿·史密斯 </styling_design>
+				<clothing_design> 伊丽莎白·麦克布莱德 </clothing_design>
+			</design>
+			<director>
+				<chief_director> 弗兰克·德拉邦特 </chief_director>
+				<other_director>
+					<corner_director> 德博拉·阿奎拉 </corner_director>
+					<dubbing_director> 陆揆 </dubbing_director>
+					<deputy_director> 迈克尔·格林伍德 </deputy_director>
+				</other_director>
+			</director>
+			<performer>
+				<perlead perid="1" persex="true" pernation="USA"> 蒂姆·罗宾斯 </perlead>
+				<per_supporting_role suprolid="2" suprolsex="true" suprolnation="USA"> 摩根·弗里曼 </per_supporting_role>
+				<per_supporting_role suprolid="3" suprolsex="true" suprolnation="USA"> 鲍勃·冈顿 </per_supporting_role>
+				<per_supporting_role suprolid="4" suprolsex="true" suprolnation="USA"> 威廉姆·赛德勒 </per_supporting_role>
+				<per_supporting_role suprolid="5" suprolsex="true" suprolnation="USA"> 克兰西·布朗 </per_supporting_role>
+			</performer>
+			<other_person>
+				<sound_recording> 爱德华多·米库奇 </sound_recording>
+				<photography> 罗杰·狄金斯 </photography>
+				<screenwriter> 斯蒂芬·金 </screenwriter>
+			</other_person>
+		</personnel>
+		<music>
+			<theme_song theme_language="English" theme_singer="The Ink Spots"> 五月 </theme_song>
+			<propaganda_song pro_language="English" pro_singer="The Ink Spots"> 肖申克监狱 </propaganda_song>
+		</music>
+		<other>
+			<score>9.6</score>
+			<release_time>1994-09-10</release_time>
+			<box_office>28241469</box_office>
+			<movie_link>https://v.qq.com/x/cover/1o29ui77e85grdr.html?ptag=douban.movie</movie_link>
+			<movie_image>../images/post.jpg</movie_image>
+		</other>
+	</movie>
+</movies>
