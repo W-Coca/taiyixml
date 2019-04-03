@@ -23,6 +23,13 @@ p{
 	color:#999;
 	letter-spacing:1px;
 }
+
+svggg{
+	    position: relative;
+		left:40%;
+	float:none;magring:0;border:0px none
+}
+
 ul,label{
 	margin:0;
 	padding:0;
@@ -2011,4 +2018,5 @@ h3.title-w3l-2 {
 		font-size: 13px;
 	}
 }
+
 /*--//responsive--*/

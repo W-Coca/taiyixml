@@ -4,11 +4,23 @@
 	<xsl:template match="/">
 		<html>
 			<style> 
-			back{
+			.back{
             display: block;
             background-image:url(../images/lan.jpg);
             background-repeat: repeat;
            
+            }
+			
+			border{
+			display:block;
+			margin-left:3%;
+			margin-right:3%;
+			
+			        width: 94%;
+                    height: 110%;
+                    background: rgba(255, 250, 250, 0.7);
+                    border-radius:16px 16px 16px 16px;
+					position:absolute;
             }
 			
 			
@@ -45,9 +57,10 @@
 			background-color:#BCEE68;
 			}
             </style> 
-		    <body>
-			<back>
-
+			<border >
+			
+		    <body class="back">
+                
 			    <font color="orange">
 				    <div style="font-size:50px" align="center">
 					    <xsl:value-of select="movies/movie/content/name"/>
@@ -212,6 +225,7 @@
 						<xsl:value-of select="movies/movie/personnel/other_person/screenwriter"/>
 				    </font>
 				</actor>
+			
 								<actor>
 				    <font size="5px">
 				        <font color="red">
@@ -220,6 +234,7 @@
 						<xsl:value-of select="movies/movie/music/theme_song"/>
 				    </font>
 				</actor>
+				
 								<actor>
 				    <font size="5px">
 				        <font color="red">
@@ -261,10 +276,13 @@
 				    </font>
 				</actor>
 				
-				<footer>copyright 太一</footer>
+
 				
-				</back>
 			</body>
+			
+			<footer>copyright © 2019 太一 https://w-coca.github.io/taiyixml/ All Rights Reserved.</footer>
+			</border>
+							
 		</html>
 	</xsl:template>
 </xsl:stylesheet>
